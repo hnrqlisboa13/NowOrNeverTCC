@@ -71,7 +71,7 @@ const Jogo = () => {
                 <header className={`hidden lg:flex items-center justify-between px-8 py-4 ${isDarkMode ? "bg-[#336FA5]" : "bg-[#144774]"}`}>
                     <Link to="/">
                         <img
-                            src={isDarkMode ? "./imagens/logo-desktop-dark.png" : "./imagens/logo-desktop.png"}
+                            src={isDarkMode ? "./imagens/logo-desktop.png" : "./imagens/logo-desktop.png"}
                             alt="Logo Desktop"
                             className="w-60"
                         />

@@ -36,52 +36,51 @@ const Materiais = () => {
   ];
 
   return (
-    <div className={`min-h-screen flex justify-center ${isDarkMode ? "bg-[#144774]" : "bg-white"}`}>
-      <div className={`w-full max-w-[1440px] min-h-screen ${isDarkMode ? "bg-[#144774] text-white" : "bg-white text-[#144774]"}`}>
-
+    <div className={`min-h-screen ${isDarkMode ? "bg-[#144774]" : "bg-white"}`}>
+      <div className={`w-full max-w-[1440px] mx-auto min-h-screen ${isDarkMode ? "bg-white text-[#144774]" : "bg-white text-[#144774]"}`}>
         <header className="flex justify-between items-center p-4 lg:hidden relative z-50">
-            <button onClick={toggleDarkMode} className="cursor-pointer">
-              <img
-                src={isDarkMode ? "./imagens/icone-sol.png" : "./imagens/icone-lua.png"}
-                alt="Tema"
-                className="w-23"
-              />
+          <button onClick={toggleDarkMode} className="cursor-pointer">
+            <img
+              src={isDarkMode ? "./imagens/icone-sol.png" : "./imagens/icone-lua.png"}
+              alt="Tema"
+              className="w-23"
+            />
+          </button>
+          <button onClick={toggleMenu}>
+            <img
+              src={isDarkMode ? "./imagens/menu-hamburguer-mn.png" : "./imagens/menu-hamburguer-mc.png"}
+              alt="Menu"
+              className="w-25"
+            />
+          </button>
+
+          <nav
+            className={`fixed top-0 right-0 h-screen w-64 ${isDarkMode ? "bg-[#144774]" : "bg-white"} shadow-lg flex flex-col items-end gap-4 p-6 transform transition-transform duration-500 z-50 ${
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            {/* O "X" agora está posicionado com top-6, movendo-o para baixo */}
+            <button onClick={toggleMenu} className="absolute top-30 left-6">
+              <img src="./imagens/x.png" alt="Fechar menu" className="w-12" />
             </button>
-            <button onClick={toggleMenu}>
+            <Link to="/" onClick={toggleMenu} className='mb-4 mt-16'>
               <img
-                src={isDarkMode ? "./imagens/menu-hamburguer-mn.png" : "./imagens/menu-hamburguer-mc.png"}
-                alt="Menu"
-                className="w-25"
+                src={isDarkMode ? "./imagens/logo-desktop.png" : "./imagens/logo-mobile.png"}
+                alt="Logo"
+                className="mx-auto w-40"
               />
-            </button>
+            </Link>
 
-            <nav
-              className={`fixed top-0 right-0 h-screen w-64 ${isDarkMode ? "bg-[#144774]" : "bg-white"} shadow-lg flex flex-col items-end gap-4 p-6 transform transition-transform duration-500 z-50 ${
-                isMenuOpen ? "translate-x-0" : "translate-x-full"
-              }`}
-            >
-              <button onClick={toggleMenu} className="self-end mb-4">
-                <img src="./imagens/x.png" alt="Fechar menu" className="w-8" />
-              </button>
+            <div className={`h-px w-full mb-4 ${isDarkMode ? "bg-white" : "bg-[#144774]"}`}></div>
 
-              <Link to="/" onClick={toggleMenu} className='mb-4'>
-                <img
-                  src={isDarkMode ? "./imagens/logo-desktop.png" : "./imagens/logo-mobile.png"}
-                  alt="Logo"
-                  className="mx-auto w-40"
-                />
-              </Link>
-
-              <div className={`h-px w-full mb-4 ${isDarkMode ? "bg-white" : "bg-[#144774]"}`}></div>
-
-              <Link to="/instrucoes" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>INSTRUÇÕES</Link>
-              <Link to="/materiais" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>MATERIAIS</Link>
-              <Link to="/sobrenos" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>SOBRE NÓS</Link>
-              <Link to="/referencias" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>REFERÊNCIAS</Link>
-              <Link to="/jogo" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>JOGO</Link>
-              <Link to="/faleconosco" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>CONTATO</Link>
-            </nav>
-          </header>
+            <Link to="/instrucoes" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>INSTRUÇÕES</Link>
+            <Link to="/materiais" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>MATERIAIS</Link>
+            <Link to="/sobrenos" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>SOBRE NÓS</Link>
+            <Link to="/referencias" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>REFERÊNCIAS</Link>
+            <Link to="/jogo" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>JOGO</Link>
+            <Link to="/faleconosco" onClick={toggleMenu} className={`text-lg hover:text-[#336FA5] font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>CONTATO</Link>
+          </nav>
+        </header>
 
         <header className={`hidden lg:flex items-center justify-between px-8 py-4 ${isDarkMode ? "bg-[#336FA5]" : "bg-[#144774]"}`}>
           <Link to="/">
@@ -110,8 +109,8 @@ const Materiais = () => {
           </button>
         </header>
 
-        <h1 className="font-[MadimiOne] text-xl text-center my-8 lg:hidden"> MATERIAIS POR TRÁS  <br />  DO “NOW OR NEVER"</h1>
-        <h1 className="hidden lg:block font-[MadimiOne] text-5xl text-center my-28">MATERIAIS POR TRÁS DO “NOW OR NEVER"</h1>
+        <h1 className={`font-[MadimiOne] text-xl text-center my-8 lg:hidden ${isDarkMode ? "text-[#144774]" : "text-[#144774]"}`}> MATERIAIS POR TRÁS  <br />  DO “NOW OR NEVER"</h1>
+        <h1 className={`hidden lg:block font-[MadimiOne] text-5xl text-center my-28 ${isDarkMode ? "text-[#144774]" : "text-[#144774]"}`}>MATERIAIS POR TRÁS DO “NOW OR NEVER"</h1>
 
         <section className="flex flex-wrap justify-center gap-8 lg:gap-12 p-5 lg:p-10">
           {materials.map((item, index) => (
