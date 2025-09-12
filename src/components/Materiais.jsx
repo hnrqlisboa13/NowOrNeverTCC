@@ -59,15 +59,14 @@ const Materiais = () => {
               isMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
-            {/* O "X" agora está posicionado com top-6, movendo-o para baixo */}
-            <button onClick={toggleMenu} className="absolute top-30 left-6">
+            <button onClick={toggleMenu} className="self-end mb-4">
               <img src="./imagens/x.png" alt="Fechar menu" className="w-12" />
             </button>
-            <Link to="/" onClick={toggleMenu} className='mb-4 mt-16'>
+            <Link to="/" onClick={toggleMenu} className='mb-4 -mt-4'>
               <img
                 src={isDarkMode ? "./imagens/logo-desktop.png" : "./imagens/logo-mobile.png"}
                 alt="Logo"
-                className="mx-auto w-40"
+                className="w-40"
               />
             </Link>
 
