@@ -1,1 +1,72 @@
+@font-face {
+    font-family: MadimiOne;
+    src: url('../src/assets/fonts/MadimiOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: MadaBlack;
+    src: url('../src/assets/fonts/Mada-Black.ttf');
+}
+
+@font-face {
+    font-family: MadaBold;
+    src: url('../src/assets/fonts/Mada-Bold.ttf');
+}
+
+@font-face {
+    font-family: Mada-ExtraLight;
+    src: url('../src/assets/fonts/Mada-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Mada-Light;
+    src: url('../src/assets/fonts/Mada-Light.ttf');
+}
+
+@font-face {
+    font-family: Mada-Medium;
+    src: url('../src/assets/fonts/Mada-Medium.ttf');
+}
+
+@font-face {
+    font-family: Mada-Regular;
+    src: url('../src/assets/fonts/Mada-Regular.ttf');
+}
+
+@font-face {
+    font-family: Mada-SemiBold;
+    src: url('../src/assets/fonts/Mada-SemiBold.ttf');
+}
+
 @import "tailwindcss";
+
+@theme {
+    --color-white: #F5F5F5;
+    --color-medium-gray: #D9D9D9;
+    --color-dark-blue: #144774;
+    --color-medium-blue: #336FA5;
+    --color-light-blue :#9ECAE3;
+    --color-bc-blue: #4E8BB8;
+    --color-bn-blue: #6FADD2;
+    --font-madimione: MadimiOne, "sans-serif";
+    --font-madablack: MadaBlack, "sans-serif";
+    --font-madabold: MadaBold, "sans-serif";
+    --font-madaextralight: Mada-ExtraLight, "sans-serif";
+    --font-madalight: Mada-Light, "sans-serif";
+    --font-madamedium: Mada-Medium, "sans-serif";
+    --font-madaregular: Mada-Regular, "sans-serif";
+    --font-madasemibold: Mada-SemiBold, "sans-serif";
+}
+
+.menu-link {
+    color: var(--white); 
+    text-decoration: none;
+    transition: color 0.3s; 
+  }
+
+  .menu-link:hover {
+    background-color: var(--color-medium-gray);
+    color: var(--color-dark-blue);
+    padding: 12px 20px;   
+    border-radius: 28px;
+  }
