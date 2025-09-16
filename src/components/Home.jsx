@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -22,8 +22,8 @@ const Home = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     return (
-    <div className="max-w-[1440px] mx-auto p-4 lg:p-0">
-      <div className={`min-h-screen ${isDarkMode ? "bg-[#144774] text-white" : "bg-white text-[#144774]"}`}>
+    <div className="min-h-screen bg-white">
+      <div className={`w-full max-w-[1440px] mx-auto p-4 lg:p-0  ${isDarkMode ? "bg-[#144774] text-white" : "bg-white text-[#144774]"}`}>
         <header className="flex justify-between items-center p-4 lg:hidden relative z-50">
             <button onClick={toggleDarkMode} className="cursor-pointer">
               <img
@@ -68,7 +68,7 @@ const Home = () => {
           </header>
         
           <header className={`hidden lg:flex items-center justify-between px-8 py-4 ${isDarkMode ? "bg-[#336FA5]" : "bg-[#144774]"}`}>
-            {/* Lógica da logo desktop ajustada */}
+            
             <Link to="/">
               <img 
                 src={isDarkMode ? "./imagens/logo-desktop.png" : "./imagens/logo-desktop.png"} 
@@ -99,50 +99,50 @@ const Home = () => {
             <div className="lg:mt-30 my-8 flex flex-col lg:flex-row items-center justify-between gap-10">
               <div className="text-center lg:text-left lg:w-1/2 lg:pr-10">
                 <h2 className={`text-xl lg:text-5xl font-madimione mb-6 ${isDarkMode ? "text-white" : "text-[#144774]"}`}>Dê fim à procrastinação com um Robô Inteligente</h2>
-                <p className={`lg:mt-8 text-sm lg:text-2xl text-justify px-5 lg:px-0 ${isDarkMode ? "text-white" : "text-[#144774]"}`}>Diga adeus às distrações e aumente sua produtividade. Foque no que realmente importa, organize suas tarefas e alcance mais em menos tempo. Transforme seu dia com pequenas mudanças e veja grandes resultados.</p>
+                <p className={`lg:mt-8 text-1xl lg:text-2xl text-justify ${isDarkMode ? "text-white" : "text-[#144774]"}`}>Diga adeus às distrações e aumente sua produtividade. Foque no que realmente importa, organize suas tarefas e alcance mais em menos tempo. Transforme seu dia com pequenas mudanças e veja grandes resultados.</p>
                 <div className="flex justify-center lg:justify-start gap-5 mt-5">
                   <Link to="https://napratica.org.br/dicas-como-parar-de-procrastinar/" className="py-2 px-6 lg:py-4 lg:px-12 font-madimione lg:mt-5 text-white rounded-full text-lg lg:text-3xl bg-[#336FA5] hover:bg-[#D9D9D9] hover:text-[#144774] dark:bg-[#4E8BB8] dark:hover:bg-white dark:hover:text-[#144774] transition-colors duration-300">SAIBA MAIS</Link>
                   <Link to="https://www.instagram.com/now_or_never.oficial?igsh=azZjcnRvOHNoMGFy" className="py-2 px-8 lg:py-4 lg:px-16 font-madimione lg:mt-5 text-white rounded-full text-lg lg:text-3xl bg-[#336FA5] hover:bg-[#D9D9D9] hover:text-[#144774] dark:bg-[#9ECAE3] dark:hover:bg-white dark:hover:text-[#144774] transition-colors duration-300">ACESSAR</Link>
                 </div>
               </div>
               <div className="mt-8 lg:w-1/2">
-                <img src="./imagens/home.jpg" alt="Imagem Home" className="w-full lg:mt-5 lg:w-4/4 rounded-[30px] lg:rounded-[40px] border border-[#144774] dark:border-white" />
+                <img src="./imagens/home.jpg" alt="Imagem Home" className="w-full lg:mt-0 lg:w-4/4 rounded-[30px] lg:rounded-[40px] border border-[#144774] dark:border-white" />
               </div>
             </div>
 
-            <div className="my-8 lg:flex lg:justify-between lg:items-start px-5 lg:px-0">
+            <div className="my-8 lg:flex lg:justify-between lg:items-start lg:px-0">
               <div className="lg:w-1/2 text-center lg:text-left mb-4 lg:mt-25">
                 <h2 className={`text-xl lg:text-5xl font-madimione ${isDarkMode ? "text-white" : "text-[#144774]"}`}>O Now or Never é a melhor opção para otimizar tarefas</h2>
               </div>
 
-              <div className="lg:w-1/2 text-justify lg:mt-20 lg:pl-8">
-                <p className={`text-sm lg:text-2xl ${isDarkMode ? "text-white" : "text-[#144774]"}`}>Encontramos a solução para transformar seus dias e recuperar o controle da sua rotina. Com nossa abordagem inovadora, você finalmente vai superar a procrastinação e conquistar mais foco, produtividade e tempo para o que realmente importa.</p>
+              <div className="lg:w-1/2 text-justify lg:mt-20">
+                <p className={`text-1xl lg:text-2xl  ${isDarkMode ? "text-white" : "text-[#144774]"}`}>Encontramos a solução para transformar seus dias e recuperar o controle da sua rotina. Com nossa abordagem inovadora, você finalmente vai superar a procrastinação e conquistar mais foco, produtividade e tempo para o que realmente importa.</p>
               </div>
 
             </div>
 
             <section className="p-4 text-center lg:mt-20">
-              <h2 className={`text-xl lg:text-5xl font-madimione my-6 ${isDarkMode ? 'text-white' : 'text-[#144774]'}`}>Qual é o diferencial do Now or Never?</h2>
+              <h2 className={`text-xl lg:text-5xl font-madimione my-6 ${isDarkMode ? 'text-white' : 'text-[#144774]'}`}>Qual é o diferencial do <br className="block lg:hidden" /> Now or Never?</h2>
               <div className='flex flex-wrap justify-center gap-8 lg:gap-12 p-5 lg:p-10'>
-                {/* Box 1 */}
+                
                 <div className={`${isDarkMode ? 'bg-[#D9D9D9]' : 'bg-white border-[#144774]'} border-2 rounded-[30px] p-4 flex flex-col items-center justify-center gap-2 transition-colors duration-500 w-200 lg:w-60`}>
                   <img src="./imagens/relogio.png" alt="Relógio" className="w-40" />
                   <h3 className={`text-lg font-bold ${isDarkMode ? 'text-[#144774]' : 'text-[#144774]'}`}>RELÓGIO</h3>
                   <p className={`text-sm ${isDarkMode ? 'text-[#144774]' : 'text-[#144774]'}`}>Organiza o tempo com foco e pausas programadas.</p>
                 </div>
-                {/* Box 2 */}
+                
                 <div className={`${isDarkMode ? 'bg-[#D9D9D9]' : 'bg-white border-[#144774]'} border-2 rounded-[30px] p-4 flex flex-col items-center justify-center gap-2 transition-colors duration-500 w-200 lg:w-60`}>
                   <img src="./imagens/telefone.png" alt="Telefone" className="w-40" />
                   <h3 className={`text-lg font-bold ${isDarkMode ? 'text-[#144774]' : 'text-[#144774]'}`}>APLICATIVO</h3>
                   <p className={`text-sm ${isDarkMode ? 'text-[#144774]' : 'text-[#144774]'}`}>Acesse e controle sua rotina de qualquer lugar.</p>
                 </div>
-                {/* Box 3 */}
+                
                 <div className={`${isDarkMode ? 'bg-[#D9D9D9]' : 'bg-white border-[#144774]'} border-2 rounded-[30px] p-4 flex flex-col items-center justify-center gap-2 transition-colors duration-500 w-200 lg:w-60`}>
                   <img src="./imagens/trofeu.png" alt="Troféu" className="w-40" />
                   <h3 className={`text-lg font-bold ${isDarkMode ? 'text-[#144774]' : 'text-[#144774]'}`}>RECOMPENSAS</h3>
                   <p className={`text-sm ${isDarkMode ? 'text-[#144774]' : 'text-[#144774]'}`}>Ganhe pontos e conquistas por cada tarefa feita.</p>
                 </div>
-                {/* Box 4 */}
+                
                 <div className={`${isDarkMode ? 'bg-[#D9D9D9]' : 'bg-white border-[#144774]'} border-2 rounded-[30px] p-4 flex flex-col items-center justify-center gap-2 transition-colors duration-500 w-200 lg:w-60`}>
                   <img src="./imagens/relatorio.png" alt="Relatório" className="w-40" />
                   <h3 className={`text-lg font-bold ${isDarkMode ? 'text-[#144774]' : 'text-[#144774]'}`}>RELATÓRIOS</h3>

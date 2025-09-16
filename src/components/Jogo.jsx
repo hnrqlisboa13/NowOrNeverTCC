@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Jogo = () => {
@@ -25,8 +25,8 @@ const Jogo = () => {
     };
 
     return (
-        <div className="max-w-[1440px] mx-auto p-4 lg:p-0">
-            <div className={`min-h-screen ${isDarkMode ? "bg-[#144774] text-white" : "bg-white text-[#144774]"}`}>
+        <div className="min-h-screen bg-white">
+            <div className={`w-full max-w-[1440px] mx-auto p-4 lg:p-0 ${isDarkMode ? "bg-[#144774] text-white" : "bg-white text-[#144774]"}`}>
 
                 <header className="flex justify-between items-center p-4 lg:hidden relative z-50">
                     <button onClick={toggleDarkMode} className="cursor-pointer">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Materiais = () => {
@@ -36,10 +36,8 @@ const Materiais = () => {
   ];
 
   return (
-    // A margem agora fica fixa em branco
     <div className="min-h-screen bg-white">
-      {/* O 'div' interno muda de cor para o modo noturno, e o texto muda para branco. */}
-      <div className={`w-full max-w-[1440px] mx-auto min-h-screen ${isDarkMode ? "bg-[#144774] text-white" : "bg-white text-[#144774]"}`}>
+      <div className={`w-full max-w-[1440px] mx-auto p-4 lg:p-0 ${isDarkMode ? "bg-[#144774] text-white" : "bg-white text-[#144774]"}`}>
         <header className="flex justify-between items-center p-4 lg:hidden relative z-50">
           <button onClick={toggleDarkMode} className="cursor-pointer">
             <img
@@ -110,7 +108,6 @@ const Materiais = () => {
           </button>
         </header>
 
-        {/* Os títulos também precisam de lógica de cor */}
         <h1 className={`font-[MadimiOne] text-xl text-center my-8 lg:hidden ${isDarkMode ? "text-white" : "text-[#144774]"}`}> MATERIAIS POR TRÁS  <br />  DO “NOW OR NEVER"</h1>
         <h1 className={`hidden lg:block font-[MadimiOne] text-5xl text-center my-28 ${isDarkMode ? "text-white" : "text-[#144774]"}`}>MATERIAIS POR TRÁS DO “NOW OR NEVER"</h1>
 
