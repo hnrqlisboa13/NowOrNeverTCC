@@ -38,7 +38,6 @@ const SobreNos = () => {
       min-h-screen p-4 lg:p-0
     `}>
 
-      {/* --- MENU PADRONIZADO INÍCIO --- */}
       <header className="flex justify-between items-center p-4 lg:hidden relative z-50">
         <button onClick={toggleDarkMode} className="cursor-pointer">
           <img
@@ -61,7 +60,7 @@ const SobreNos = () => {
           }`}
         >
           <button onClick={toggleMenu} className="self-end mb-4">
-            <img src="./imagens/x.png" alt="Fechar menu" className="w-8" />
+            <img src="./imagens/x.png" alt="Fechar menu" className="w-15" />
           </button>
 
           <Link to="/" onClick={toggleMenu} className='mb-4'>
@@ -127,7 +126,7 @@ const SobreNos = () => {
                 href={member.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#4E8BB8] dark:bg-[#6FADD2] py-1 px-5 lg:py-4 lg:px-12 text-white rounded-[30px] font-[MadimiOne] text-lg lg:text-2xl no-underline transition-colors duration-300 hover:bg-white hover:text-[#144774] dark:hover:text-[#336FA5]"
+                className="bg-[#4E8BB8] dark:bg-[#6FADD2] py-1 px-5 lg:py-4 lg:px-12 text-white rounded-[35px] font-[MadimiOne] text-lg lg:text-2xl no-underline transition-colors duration-300 hover:bg-white hover:text-[#144774] dark:hover:text-[#336FA5]"
               >
                 VER PERFIL
               </a>

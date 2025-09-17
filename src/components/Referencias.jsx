@@ -45,7 +45,7 @@ const Referencias = () => {
             }`}
           >
             <button onClick={toggleMenu} className="self-end mb-4">
-              <img src="./imagens/x.png" alt="Fechar menu" className="w-8" />
+              <img src="./imagens/x.png" alt="Fechar menu" className="w-15" />
             </button>
 
             <Link to="/" onClick={toggleMenu} className='mb-4'>
