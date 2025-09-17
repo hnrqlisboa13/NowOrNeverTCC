@@ -95,7 +95,7 @@ const FaleConosco = () => {
 
         <div className="max-w-[1440px] mx-auto p-4 lg:p-0">
           <div className="flex justify-center items-center mt-12 lg:mt-32">
-            <form className={`${isDarkMode ? "bg-[#336FA5]" : "bg-[#144774]"} p-8 lg:p-12 rounded-[25px] lg:rounded-[40px] w-[670px] lg:h-[700px] flex flex-col gap-4`}>
+            <form className={`${isDarkMode ? "bg-[#336FA5]" : "bg-[#144774]"} p-8 lg:p-12 rounded-[25px] mb-10 lg:rounded-[40px] w-[670px] lg:h-[700px] flex flex-col gap-4`}>
               <input 
                 type="text" 
                 placeholder="Nome" 
