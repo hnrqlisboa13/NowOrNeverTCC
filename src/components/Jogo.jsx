@@ -44,9 +44,8 @@ const Jogo = () => {
                         />
                     </button>
                     <nav
-                        className={`fixed top-0 right-0 h-screen w-64 ${isDarkMode ? "bg-[#144774]" : "bg-white"} shadow-lg flex flex-col items-end gap-4 p-6 transform transition-transform duration-500 z-50 ${
-                            isMenuOpen ? "translate-x-0" : "translate-x-full"
-                        }`}
+                        className={`fixed top-0 right-0 h-screen w-64 ${isDarkMode ? "bg-[#144774]" : "bg-white"} shadow-lg flex flex-col items-end gap-4 p-6 transform transition-transform duration-500 z-50 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+                            }`}
                     >
                         <button onClick={toggleMenu} className="self-end mb-4">
                             <img src="./imagens/x.png" alt="Fechar menu" className="w-15" />
@@ -101,7 +100,7 @@ const Jogo = () => {
                             <h2 className={`font-[MadimiOne] text-xl leading-tight mt-5 mb-4 ${isDarkMode ? "text-[#144774]" : "text-[#144774]"}`}>TICK TOK: TIME IS PASSING</h2>
                             <p className={`font-[Mada-Regular] text-lg text-justify w-60 ${isDarkMode ? "text-[#144774]" : "text-[#144774]"}`}>Um jogo divertido que coloca você no papel de um estudante enfrentando a procrastinação. Colete reloginhos para ganhar tempo, responda perguntas desafiadoras feitas por professores e use anjos do conhecimento com sabedoria. Mas atenção: errar pode custar uma fase — ou até mesmo o jogo inteiro!</p>
                             <img src="./imagens/img-bloco4.jpg" alt="Vídeo" className={`w-[260px] rounded-[25px] mt-8 ${isDarkMode ? "border border-[#144774]" : "border border-[#144774]"}`} />
-                            <Link to="/jogar" className="block py-2 px-12 bg-[#144774] text-[#F5F5F5] font-[MadimiOne] text-xl rounded-[25px] mt-5 transition-colors duration-300 hover:bg-[#F5F5F5] hover:text-[#144774] hover:border hover:border-[#336FA5]">JOGAR</Link>
+                            <Link to="#" onClick={() => window.open("https://jogo-tcc-eosin.vercel.app/", "_blank")} className="block py-2 px-12 bg-[#144774] text-[#F5F5F5] font-[MadimiOne] text-xl rounded-[25px] mt-5 transition-colors duration-300 hover:bg-[#F5F5F5] hover:text-[#144774] hover:border hover:border-[#336FA5]">JOGAR</Link>
                         </div>
                     </div>
 
@@ -110,7 +109,7 @@ const Jogo = () => {
                             <div className="flex-1 flex flex-col justify-center items-center text-center gap-5">
                                 <h2 className={`font-[MadimiOne] text-4xl mb-2 ${isDarkMode ? "text-[#144774]" : "text-[#144774]"}`}>TICK TOK: TIME IS PASSING</h2>
                                 <p className={`font-[Mada-Regular] text-3xl text-justify mb-2 ${isDarkMode ? "text-[#144774]" : "text-[#144774]"}`}>Um jogo divertido que coloca você no papel de um estudante enfrentando a procrastinação. Colete reloginhos para ganhar tempo, responda perguntas desafiadoras feitas por professores e use anjos do conhecimento com sabedoria. Mas atenção: errar pode custar uma fase — ou até mesmo o jogo inteiro!</p>
-                                <Link to="/jogar" className="block py-5 px-20 bg-[#144774] text-[#F5F5F5] font-[MadimiOne] text-4xl rounded-[40px] transition-colors duration-300 hover:bg-[#F5F5F5] hover:text-[#144774] hover:border hover:border-[#336FA5]">JOGAR</Link>
+                                <Link to="#" onClick={() => window.open("https://jogo-tcc-eosin.vercel.app/", "_blank")} className="block py-5 px-20 bg-[#144774] text-[#F5F5F5] font-[MadimiOne] text-4xl rounded-[40px] transition-colors duration-300 hover:bg-[#F5F5F5] hover:text-[#144774] hover:border hover:border-[#336FA5]">JOGAR</Link>
                             </div>
                             <div className="flex-1 flex justify-center items-center">
                                 <img src="./imagens/img-bloco4.jpg" alt="Vídeo" className="w-[550px] rounded-[40px] -mt-12" />
@@ -118,6 +117,7 @@ const Jogo = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     );
