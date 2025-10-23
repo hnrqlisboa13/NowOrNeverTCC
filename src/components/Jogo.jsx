@@ -99,7 +99,19 @@ const Jogo = () => {
                         <div className={`flex flex-col items-center justify-center rounded-[30px] p-8 text-center max-w-[300px] h-[680px] ${isDarkMode ? "bg-[#D9D9D9] border-[#336FA5]" : "bg-[#D9D9D9] border-[#144774]"} border text-[#144774]`}>
                             <h2 className={`font-[MadimiOne] text-xl leading-tight mt-5 mb-4 ${isDarkMode ? "text-[#144774]" : "text-[#144774]"}`}>TICK TOK: TIME IS PASSING</h2>
                             <p className={`font-[Mada-Regular] text-lg text-justify w-60 ${isDarkMode ? "text-[#144774]" : "text-[#144774]"}`}>Um jogo divertido que coloca você no papel de um estudante enfrentando a procrastinação. Colete reloginhos para ganhar tempo, responda perguntas desafiadoras feitas por professores e use anjos do conhecimento com sabedoria. Mas atenção: errar pode custar uma fase — ou até mesmo o jogo inteiro!</p>
-                            <img src="./imagens/img-bloco4.jpg" alt="Vídeo" className={`w-[260px] rounded-[25px] mt-8 ${isDarkMode ? "border border-[#144774]" : "border border-[#144774]"}`} />
+                            <div className="flex-1 flex justify-center items-center w-full">
+                                <div className="relative w-full pb-[58.25%]"> 
+                                    <iframe
+                                        className="absolute top-0 left-0 w-full h-full rounded-[15px]"
+                                        src="https://www.youtube.com/embed/sSIZ34D9qC8"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            </div>
+
                             <Link to="#" onClick={() => window.open("https://jogo-tcc-eosin.vercel.app/", "_blank")} className="block py-2 px-12 bg-[#144774] text-[#F5F5F5] font-[MadimiOne] text-xl rounded-[25px] mt-5 transition-colors duration-300 hover:bg-[#F5F5F5] hover:text-[#144774] hover:border hover:border-[#336FA5]">JOGAR</Link>
                         </div>
                     </div>
@@ -112,8 +124,18 @@ const Jogo = () => {
                                 <Link to="#" onClick={() => window.open("https://jogo-tcc-eosin.vercel.app/", "_blank")} className="block py-5 px-20 bg-[#144774] text-[#F5F5F5] font-[MadimiOne] text-4xl rounded-[40px] transition-colors duration-300 hover:bg-[#F5F5F5] hover:text-[#144774] hover:border hover:border-[#336FA5]">JOGAR</Link>
                             </div>
                             <div className="flex-1 flex justify-center items-center">
-                                <img src="./imagens/img-bloco4.jpg" alt="Vídeo" className="w-[550px] rounded-[40px] -mt-12" />
+                                <iframe
+                                    width="580"
+                                    height="350"
+                                    src="https://www.youtube.com/embed/sSIZ34D9qC8"
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                    className="rounded-[25px] -mt-8"
+                                ></iframe>
                             </div>
+
                         </div>
                     </div>
                 </div>
