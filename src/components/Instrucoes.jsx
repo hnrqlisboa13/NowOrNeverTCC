@@ -131,7 +131,7 @@ function Instrucoes() {
                             iframe: (
                                 <div className="relative w-full pb-[58.25%]"> 
                                     <iframe
-                                        className="absolute top-0 left-0 w-full h-full rounded-[30px]"
+                                        className="absolute top-0 left-0 w-full h-full"
                                         src="https://www.youtube.com/embed/sSIZ34D9qC8"
                                         title="YouTube video player"
                                         frameBorder="0"

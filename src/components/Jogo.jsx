@@ -102,7 +102,7 @@ const Jogo = () => {
                             <div className="flex-1 flex justify-center items-center w-full">
                                 <div className="relative w-full pb-[58.25%]"> 
                                     <iframe
-                                        className="absolute top-0 left-0 w-full h-full rounded-[15px]"
+                                        className="absolute top-0 left-0 w-full h-full"
                                         src="https://www.youtube.com/embed/sSIZ34D9qC8"
                                         title="YouTube video player"
                                         frameBorder="0"
@@ -132,7 +132,7 @@ const Jogo = () => {
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowFullScreen
-                                    className="rounded-[25px] -mt-8"
+                                    className="round-mt-8"
                                 ></iframe>
                             </div>
 
