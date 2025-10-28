@@ -123,7 +123,7 @@ const Jogo = () => {
                                 <p className={`font-[Mada-Regular] text-3xl text-justify mb-2 ${isDarkMode ? "text-[#144774]" : "text-[#144774]"}`}>Um jogo divertido que coloca você no papel de um estudante enfrentando a procrastinação. Colete reloginhos para ganhar tempo, responda perguntas desafiadoras feitas por professores e use anjos do conhecimento com sabedoria. Mas atenção: errar pode custar uma fase — ou até mesmo o jogo inteiro!</p>
                                 <Link to="#" onClick={() => window.open("https://jogo-tcc-eosin.vercel.app/", "_blank")} className="block py-5 px-20 bg-[#144774] text-[#F5F5F5] font-[MadimiOne] text-4xl rounded-[40px] transition-colors duration-300 hover:bg-[#F5F5F5] hover:text-[#144774] hover:border hover:border-[#336FA5]">JOGAR</Link>
                             </div>
-                            <div className="flex-1 flex justify-center items-center">
+                            <div classNamatue="flex-1 flex justify-center items-center">
                                 <iframe
                                     width="580"
                                     height="350"
