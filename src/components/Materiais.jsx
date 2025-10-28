@@ -29,7 +29,6 @@ const Materiais = () => {
     { name: 'Display 2.8 Touch Screen', price: 'R$ 245,54', image: './imagens/display.png' },
     { name: 'Protoboard', price: 'R$ 13,44', image: './imagens/protoboard.png' },
     { name: 'Fio Jumper', price: 'R$ 8,57', image: './imagens/fio-jumper.png' },
-    { name: 'Now or Never', price: 'R$ 0,00', image: './imagens/foto-projeto.png' },
   ];
 
   return (

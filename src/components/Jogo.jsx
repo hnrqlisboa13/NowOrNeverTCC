@@ -127,7 +127,7 @@ const Jogo = () => {
                                 <iframe
                                     width="580"
                                     height="350"
-                                    src="https://www.youtube.com/embed/sSIZ34D9qC8"
+                                    src="https://www.youtube.com/embed/6-BT3D2hP-Q"
                                     title="YouTube video player"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
